@@ -28,6 +28,7 @@
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
+    "jest": "^22.4.3",
     "jest-serializer-vue": "^1.0.0",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.6",

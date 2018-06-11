@@ -16,3 +16,11 @@ yarn build
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Test
+
+```
+yarn test
+```
+
+More info [here](https://vue-test-utils.vuejs.org/guides/testing-SFCs-with-jest.html).

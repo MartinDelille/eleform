@@ -1,26 +1,31 @@
 # eleform
 
-> A Typeform clone
-
-## Build Setup
-
-``` bash
-# install dependencies
-yarn install
-
-# serve with hot reload at localhost:8080
-yarn dev
-
-# build for production with minification
-yarn build
+## Project setup
+```
+npm install
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-## Test
-
+### Compiles and hot-reloads for development
 ```
-yarn test
+npm run serve
 ```
 
-More info [here](https://vue-test-utils.vuejs.org/guides/testing-SFCs-with-jest.html).
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Run your unit tests
+```
+npm run test:unit
+```
+
+### Run your end-to-end tests
+```
+npm run test:e2e
+```

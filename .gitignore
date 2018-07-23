@@ -5,6 +5,9 @@ coverage/
 npm-debug.log
 yarn-error.log
 yarn.lock
+package-lock.json
+selenium-debug.log
+tests/e2e/reports
 
 # Editor directories and files
 .idea

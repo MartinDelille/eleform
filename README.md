@@ -1,5 +1,7 @@
 # eleform
 
+[![Donate](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eleform/donate)
+
 ## Project setup
 ```
 npm install

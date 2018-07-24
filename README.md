@@ -1,5 +1,6 @@
 # eleform
 
+[![Gitter](https://badges.gitter.im/eleform/Lobby.svg)](https://gitter.im/eleform/Lobby?utm_source=badge)
 [![Donate](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eleform/donate)
 
 ## Project setup

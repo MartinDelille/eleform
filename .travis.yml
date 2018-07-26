@@ -3,4 +3,4 @@ node_js:
 - '10.5'
 script:
 - npm run test:unit
-#- npm run test:e2e
+- npm run test:e2e

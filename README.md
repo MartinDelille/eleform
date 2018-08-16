@@ -1,6 +1,7 @@
 # eleform
 
 [![Gitter](https://badges.gitter.im/eleform/Lobby.svg)](https://gitter.im/eleform/Lobby?utm_source=badge)
+[![Build Status](https://travis-ci.org/MartinDelille/eleform.svg?branch=master)](https://travis-ci.org/MartinDelille/eleform)
 [![Donate](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/eleform/donate)
 
 ![Eleform](eleform.jpg)

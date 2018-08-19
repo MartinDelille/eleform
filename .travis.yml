@@ -4,3 +4,23 @@ node_js:
 script:
 - npm run test:unit
 - npm run test:e2e
+deploy:
+  script:
+    - git config --global user.email "travis@travis-ci.org"
+    - git config --global user.name "Travis CI"
+    - git remote set-url origin https://${GH_TOKEN}@github.com/MartinDelille/eleform.git > /dev/null 2>&1
+    - npm run deploy
+  on:
+    branch: master
+webhooks:
+  email: false
+  urls:
+  - https://webhooks.gitter.im/e/1af305337aa41e422c46
+  on_success: always
+  on_failure: always
+  on_start: false
+env:
+  global:
+  - secure: YezPAFwZpOF4xXMhwflpc6mDZvbnbGZVrFY704CUmZoaIyDedh54LQFOwUFGm4U8hgy0mFLLN1mS498xCadQcpJFX+Clq2xwsXyqPrzvDe+9DAQBlpnptTtJdxKg0jKUeq34gc55aZ/DhfVwvFb0hcEQpPjtG7vqd852SY5YSaXgostwB9ifyj2Q3C0qtQ9IV7+xqoEzCJoijRsJvn5d1ECNl4UP2G8RBpFkDHmL15GXC0+t+pEXSsHBVwbMnVCpODgxF6zzagSVtChKOzhG/JFRw1RVttE3b3D3oeo4tYhx10PI2FOmm7yPpRk7vLsj4BDDrzbCRsBXf7ZGFyhN7ExZWiv2ckEkJFYtUqzG4IE7gncMxTGgf1N7HAU29yOItrbXkjFIHWxE64S2KVYMu81vTFxFgA75EynRKzGd6lO8ohlclDPdf8454tb1+y1ynCkKKQ3xpmnwfsbMOr/Qxa7g55L1U0HLicUwsEFabhpSWdoreZad5fJ2/WAEQJVloB4XLhFOr9rTT4yCC9g6KfHe9lJS44U2cU4Z9NSxI8iAL8kO/6s7h/4g0xHCuHvxgiAJfu2tsIs3zZ5oieugUhCeRzZRCudGox+I3c8jUhWAPQj0KEpGZZjVUi1fJxL5G0p8+YTgogS3ipPrqYe/2uVjaqqjO77bBZ+tV5U5dbc=
+  - secure: avhagSmPd8ld02pTaV/fYf3mDwcoRlFtvLWfWVa4HokzzendZWk5rfEdRLir0donV0AxWJgM+lOXEN1gXbYtTRRQS+hNo4eBxleM4wGAt3BE3114jbIP9A3EVP5f/cIGLi0ck1blPvsKt6oWedgqdW7cmo2OMDKWMTcqzvaCyXsABFoxp+4ElETVgs977rDpVMjX6S+7xmvV+Ju3S/uJ05F4gAZfThhyMn6x+XMMEWU7AOSmg/ImqqP8EpV2ADBTeMU/EzK7o3ntMYk6VS+zs8GyLScUYCMiAPi22odAWEVOHVtqKSx02irq8JxCmhxxndVLFDuqcabXLtOMGHBpazELcBQXkbjPuDU+SWj9Rim6L44hgBhQ4tF8c7NP0AAgE/a7eFOK6UtJWkT7OzY3eee4dIkawxCUCQ4Xp4qI8IE0VsmdAjoJsCx8Dv62ALM+Qneoe5mfQ2DYcOHmkUljkvsNMYZ73M2kdeg7CRsNQCa9ORjPVMKsxgxsxE8zf0mOi5OVayFqQxIT116HkyCcs99Pux1oKv2hckBIbQfwqsmxWb/IVHt/m0cK6VqE+nUu1S4MD97luL0pOwSI3Gox4ns7PvO1SMmtjFX/qT64/g8Ey4Jt18gsUsSTR5lo5Yh3xRTxbfiWS5Ny3RMgCTms2xtUGBjtis92tmGhKEd6ILM=
+  - secure: e7mMDhtsOfM2Zia9Jv46cSXwT6UFq8iHarVPLLJcb1PBrqPwJlHR0hB/ozF3vYwrsmqqw0LJ/4x9N2MuvHvO0L4hj71IwcjST+Oc+nKfN7zzu6iPq6QaAaHoZ9rwo2xNVHH0LoHZvyBsSJJ1Y15TT4nPheMAfPqGKV1MvMBD0phb3U+jpXYSg+Wtr952xdUHHo56IwTM18iZtSFcNCU8wwD3tUP+r+47nTQl1dLoMtZ31kDAWTTT3w+P22BrO/HBabWGdkwhQnxsI+Tf62MuxAJBikHOuv3i4h6wfUMiUnWzz3OnP17d9LpZ4CPxOGe7ZKrkfaDgbiTj+97OboOfxRjb2MQVYJ1X1m+V+92iwwBjWUgxVUXlmRX7ngaLg9UXG8xENxBBnfphN35W0UMWssPhtTYHwNImqNl4c+Dq2NxxIu2AEwfdXDRcQPtqctqly0Crth9768Vnx7n6LiYaqSk5/NyfKSmfOHULA2MEk06iZ9SFWuPpPv9NKD21Z32/9Ebm/CRqKxQTTEeS3YgmNWK6lG6qPf/p1vN8TkVPynQTScn+7kOshBF5HlDnTIy8SLGr+oVyjeaVlQUouuEVRMx+lU5an5kY9jl/jVkHyXKCvCxShYRsCTe2J1pVI3orHNc+L2q4cDJ7Rv7BLE8ZjKmLulYhU3K5D3nAJjVsO6I=

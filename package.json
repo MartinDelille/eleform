@@ -1,6 +1,7 @@
 {
   "name": "eleform",
   "version": "0.1.0",
+  "homepage": "https://martindelille.github.io/eleform",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",

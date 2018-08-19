@@ -1,6 +1,14 @@
 language: node_js
 node_js:
-- '10.5'
+    - '10.5'
 script:
-- npm run test:unit
-#- npm run test:e2e
+    - npm run test:unit
+    #- npm run test:e2e
+    - npm run deploy
+webhooks:
+    email: false
+    urls:
+        - https://webhooks.gitter.im/e/1af305337aa41e422c46
+    on_success: always  # options: [always|never|change] default: always
+    on_failure: always  # options: [always|never|change] default: always
+    on_start: false     # default: false

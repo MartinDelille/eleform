@@ -15,5 +15,4 @@ tests/e2e/reports
 *.ntvs*
 *.njsproj
 *.sln
-
-\.vs/slnx\.sqlite
+.vs/

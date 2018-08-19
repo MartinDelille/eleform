@@ -4,11 +4,10 @@ node_js:
 script:
 - npm run test:unit
 deploy:
-  script:
-    - git config --global user.email "travis@travis-ci.org"
-    - git config --global user.name "Travis CI"
-    - git remote set-url origin https://${GH_TOKEN}@github.com/MartinDelille/eleform.git > /dev/null 2>&1
-    - npm run deploy
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
   on:
     branch: master
 webhooks:

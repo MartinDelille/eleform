@@ -1,5 +1,5 @@
-import { shallowMount } from '@vue/test-utils'
-import Question from '@/components/Question.vue'
+import { shallowMount } from '@vue/test-utils';
+import Question from '@/components/Question.vue';
 
 describe('Question.vue', () => {
   it('renders props.msg when passed', () => {
